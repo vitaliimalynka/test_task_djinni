@@ -33,6 +33,13 @@ body {
     max-width: 1140px;
 }
 
+.icon {
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .header {
     min-height: 72px;
     border: 1px solid #EBEBEB;
@@ -63,15 +70,20 @@ body {
 
 .header .container-xl .row .search-form #search-label {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 36px;
     height: 100%;
-    background-image: url(/assets/images/icons/search.svg);
-    background-repeat: no-repeat;
-    background-position: right center;
     position: absolute;
     z-index: 100;
+}
+
+.header .container-xl .row .search-form #search-label .search-icon {
+    background-image: url(/assets/images/icons/search.svg);
+}
+
+.header .container-xl .row .search-form #search-input {
+    padding: 44px;
 }
 
 .header .container-xl .row .buttons-group .signin-btn {
@@ -79,3 +91,4 @@ body {
     white-space: nowrap;
     text-decoration: none;
 }
+
