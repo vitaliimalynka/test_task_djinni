@@ -28,3 +28,54 @@ body {
     font-size: 16px;
     line-height: 24px;
 }
+
+.container-xl {
+    max-width: 1140px;
+}
+
+.header {
+    min-height: 72px;
+    border: 1px solid #EBEBEB;
+}
+
+.header .container-xl .row .navbar {
+    height: 72px;
+    justify-content: stretch;
+}
+
+.header .container-xl .row .navbar .nav-link {
+    height: 72px;
+}
+
+.header .container-xl .row .navbar .nav-link.active {
+    color: #292929;
+    border-bottom-color: #ED7135;
+}
+
+.header .container-xl .row .search-form {
+    position: relative;
+}
+
+.header .container-xl .row .search-form .form-control {
+    background: #eee;
+    border-radius: 100px;
+}
+
+.header .container-xl .row .search-form #search-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 100%;
+    background-image: url(/assets/images/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: absolute;
+    z-index: 100;
+}
+
+.header .container-xl .row .buttons-group .signin-btn {
+    width: 48px;
+    white-space: nowrap;
+    text-decoration: none;
+}
