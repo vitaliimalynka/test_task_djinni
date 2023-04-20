@@ -36,9 +36,39 @@ body {
 .icon {
     width: 24px;
     height: 24px;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-position: center;
+    background-repeat: no-repeat; */
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    background-color: #666666;
 }
+.search-icon {
+    /* background-image: url(/assets/images/icons/search.svg); */
+    -webkit-mask-image: url(/assets/images/icons/search.svg);
+    mask-image: url(/assets/images/icons/search.svg);
+}
+.shot-icon {
+    /* background-image: url(/assets/images/icons/shot.svg); */
+    -webkit-mask-image: url(/assets/images/icons/shot.svg);
+    mask-image: url(/assets/images/icons/shot.svg);
+}
+.smile-icon {
+    /* background-image: url(/assets/images/icons/emoji-smile.svg); */
+    -webkit-mask-image: url(/assets/images/icons/emoji-smile.svg);
+    mask-image: url(/assets/images/icons/emoji-smile.svg);
+}
+.clock-icon {
+    /* background-image: url(/assets/images/icons/clock-circle.svg); */
+    -webkit-mask-image: url(/assets/images/icons/clock-circle.svg);
+    mask-image: url(/assets/images/icons/clock-circle.svg);
+}
+.garbadge-icon {
+    /* background-image: url(/assets/images/icons/garbage.svg); */
+    -webkit-mask-image: url(/assets/images/icons/garbage.svg);
+    mask-image: url(/assets/images/icons/garbage.svg);
+}
+
 
 .header {
     min-height: 72px;
@@ -78,17 +108,27 @@ body {
     z-index: 100;
 }
 
-.header .container-xl .row .search-form #search-label .search-icon {
-    background-image: url(/assets/images/icons/search.svg);
-}
-
 .header .container-xl .row .search-form #search-input {
     padding: 44px;
 }
 
 .header .container-xl .row .buttons-group .signin-btn {
     width: 48px;
-    white-space: nowrap;
-    text-decoration: none;
 }
 
+.main .container-xl .row .aside .btn {
+    border-radius: 8px;
+}
+.main .container-xl .row .aside .btn-outline-secondary.active,
+.main .container-xl .row .aside .btn-outline-secondary:hover {
+    background: #ED7135;
+}
+
+.main .container-xl .row .aside .btn-outline-secondary:hover .icon,
+.main .container-xl .row .aside .btn-outline-secondary.active .icon {
+    background-color: #fff;
+}
+
+/* .main .container-xl .row .aside .btn .btn-icon {
+    
+} */
