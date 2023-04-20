@@ -129,6 +129,6 @@ body {
     background-color: #fff;
 }
 
-/* .main .container-xl .row .aside .btn .btn-icon {
-    
-} */
+.main .container-xl .row .content .content-header .btn {
+    width: 88px;
+}
