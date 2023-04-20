@@ -1,0 +1,34 @@
+# IDEs and editors
+/.idea
+*.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System Files
+.DS_Store
+Thumbs.db
+.tmp.driveupload
+.tmp.drivedownload
+
+#map files
+*.map
+
+# Node
+**/node_modules
+npm-debug.log
+yarn-error.log
+
+/edu_additional
+
+.angular
