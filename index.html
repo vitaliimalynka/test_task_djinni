@@ -13,7 +13,7 @@
 </head>
 <body>
     <template id="cardsTemplate">
-        <div class="card-container col-lg-6">
+        <div class="card-container col-12 col-md-6">
             <div data-card class="card">
                 <img data-card-image src="assets/images/thumbnail_1.png" 
                     class="card-img-top" 
@@ -48,9 +48,9 @@
     <header class="header">
         <div class="container-xl">
             <div class="row w-100 justify-content-between m-0">
-                <div class="col-3 d-flex p-0">
+                <div class="col-2 col-md-3 d-flex p-0">
                     <nav class="navbar navbar-expand-md p-0">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        <button class="navbar-toggler mt-3 align-self-start" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -80,8 +80,8 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-8 d-flex justify-content-between align-items-center ps-2 pe-0">
-                    <form class="d-flex flex-grow-1 me-3 search-form">
+                <div class="col-10 col-md-8 d-flex justify-content-end justify-content-sm-between align-items-center ps-2 pe-0">
+                    <form class="d-none d-flex d-sm-flex flex-grow-1 me-3 search-form">
                         <label for="search-input" id="search-label">
                             <span class="icon search-icon"></span>
                         </label>
@@ -108,7 +108,7 @@
     <main class="main">
         <div class="container-xl position-relative">
             <div class="row justify-content-end mt-4 mx-0 pt-3">
-                <div class="col-3 pt-3 ps-0 pe-2 position-absolute start-0">
+                <div class="col-3 d-none d-lg-flex pt-3 ps-0 pe-2 position-absolute start-0">
                     <aside class="aside d-flex flex-column align-items-center w-100">
                         <button type="button"
                             class="d-flex btn btn-outline-secondary w-100 border-0 fw-bolder py-2 active">
@@ -132,9 +132,9 @@
                         </button>
                     </aside>
                 </div>
-                <div class="col-8 d-flex ps-2 pe-0">
+                <div class="col-12 col-lg-8 d-flex ps-2 pe-0">
                     <section class="content d-flex flex-column w-100">
-                        <header class="content-header d-flex justify-content-between mb-3">
+                        <header class="content-header d-flex flex-column flex-sm-row justify-content-between mb-3">
                             <div class="flex-item">
                                 <h1 class="title h1 fw-bolder lh-base mb-1">All photos</h1>
                                 <span class="count fw-bolder"><small class="lh-base">150 items</small></span>

@@ -37,35 +37,28 @@ body {
 .icon {
     width: 24px;
     height: 24px;
-    /* background-position: center;
-    background-repeat: no-repeat; */
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
     background-color: #666666;
 }
 .search-icon {
-    /* background-image: url(/assets/images/icons/search.svg); */
     -webkit-mask-image: url(/assets/images/icons/search.svg);
     mask-image: url(/assets/images/icons/search.svg);
 }
 .shot-icon {
-    /* background-image: url(/assets/images/icons/shot.svg); */
     -webkit-mask-image: url(/assets/images/icons/shot.svg);
     mask-image: url(/assets/images/icons/shot.svg);
 }
 .smile-icon {
-    /* background-image: url(/assets/images/icons/emoji-smile.svg); */
     -webkit-mask-image: url(/assets/images/icons/emoji-smile.svg);
     mask-image: url(/assets/images/icons/emoji-smile.svg);
 }
 .clock-icon {
-    /* background-image: url(/assets/images/icons/clock-circle.svg); */
     -webkit-mask-image: url(/assets/images/icons/clock-circle.svg);
     mask-image: url(/assets/images/icons/clock-circle.svg);
 }
 .garbadge-icon {
-    /* background-image: url(/assets/images/icons/garbage.svg); */
     -webkit-mask-image: url(/assets/images/icons/garbage.svg);
     mask-image: url(/assets/images/icons/garbage.svg);
 }
@@ -77,8 +70,7 @@ body {
 }
 
 .header .container-xl .row .navbar {
-    height: 72px;
-    justify-content: stretch;
+    min-height: 72px;
 }
 
 .header .container-xl .row .navbar .nav-link {
@@ -160,10 +152,6 @@ body {
 
 .main .container-xl .row .content .cards .row .card-container .card .card-body .card-content .btn.show {
     display: inline-block;
-}
-
-.main .container-xl .row .content .cards .row .card-container .card .card-img-top {
-    height: 200px;
 }
 
 .main .container-xl .row .content .cards .row .card-container .card .card-body .card-buttons .btn {
