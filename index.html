@@ -12,6 +12,39 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <template id="cardsTemplate">
+        <div class="card-container col-6">
+            <div class="card">
+                <img id="cardImage" src="assets/images/thumbnail_1.png" 
+                    class="card-img-top" 
+                    alt="some image">
+
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div class="card-content">
+                        <h2 id="cardTitle" class="card-title fw-bolder h4 lh-base mb-1 text-dark">Card title</h2>
+                        <p id="cardText" class="card-text text-secondary mb-2 show">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                        <button id="showMoreBtn" type="button"
+                            class="btn p-0 border-0 mb-3 fw-medium text-dark show">
+                            Show more...
+                        </button>
+                    </div>
+
+                    <div class="card-buttons d-flex">
+                        <button type="button"
+                            class="btn btn-secondary fw-bolder py-2 me-2 border-0">
+                            Save to collection
+                        </button>
+                        <button type="button"
+                            class="btn btn-outline-secondary fw-bolder text-dark py-2 ms-2 border-2 border-light-subtle">
+                            Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
     <header class="header">
         <div class="container-xl">
             <div class="row w-100 justify-content-between m-0">
@@ -121,7 +154,7 @@
                             <div id="cardsWrapper" class="row row-cols-2 g-4">
                                 <div class="card-container col-6">
                                     <div class="card">
-                                        <img src="assets/images/thumbnail.png" 
+                                        <img src="assets/images/thumbnail_1.png" 
                                             class="card-img-top" 
                                             alt="some image">
 
@@ -147,7 +180,7 @@
                                 
                                 <div class="card-container col-6">
                                     <div class="card">
-                                        <img src="assets/images/thumbnail.png" 
+                                        <img src="assets/images/thumbnail_2.png" 
                                             class="card-img-top" 
                                             alt="some image">
 
