@@ -147,8 +147,11 @@ body {
 }
 
 .main .container-xl .row .content .cards .row .card-container .card .card-body .card-content .card-text.show {
-    overflow: auto;
-    height: auto;
+    height: 100%;
+}
+
+.main .container-xl .row .content .cards .row .card-container .card .card-body .card-content .card-text.animate {
+    transition: height .5s ease;
 }
 
 .main .container-xl .row .content .cards .row .card-container .card .card-body .card-content .btn {
