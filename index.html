@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test page for Djinni</title>
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="preload" as="font" type="font/ttf" crossorigin href="assets/fonts/Commissioner-Regular.ttf">
-    <link rel="preload" as="font" type="font/ttf" crossorigin href="assets/fonts/Commissioner-Medium.ttf">
-    <link rel="preload" as="font" type="font/ttf" crossorigin href="assets/fonts/Commissioner-Bold.ttf">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/Commissioner-Regular.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/Commissioner-Medium.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/Commissioner-Bold.woff2">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container-xl">
             <div class="row w-100 justify-content-between m-0">
-                <div class="col-lg-3 d-flex p-0">
+                <div class="col-3 d-flex p-0">
                     <nav class="navbar navbar-expand-md p-0">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -25,7 +25,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav nav-underline mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="d-flex p-0 align-items-center nav-link active text-dark" 
+                                    <a class="d-flex p-0 align-items-center nav-link active text-dark"
                                         aria-current="page" 
                                         href="#">
                                         Photos
@@ -38,7 +38,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="d-flex p-0 align-items-center nav-link text-secondary" 
+                                    <a class="d-flex p-0 align-items-center nav-link text-secondary"
                                         href="#">
                                         Podcasts
                                     </a>
@@ -47,7 +47,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-lg-8 p-0 d-flex justify-content-between align-items-center">
+                <div class="col-8 d-flex justify-content-between align-items-center ps-2 pe-0">
                     <form class="d-flex flex-grow-1 me-3 search-form">
                         <label for="search-input" id="search-label">
                             <span class="icon search-icon"></span>
@@ -59,11 +59,12 @@
                             aria-label="Search">
                     </form>
                     <div class="buttons-group d-flex justify-content-between align-items-center ms-4">
-                        <select class="form-select border-0 ps-0 py-0 pe-4 w-100 text-secondary" aria-label="Choose language">
+                        <select class="form-select border-0 ps-0 py-0 pe-3 w-100 text-secondary"
+                            aria-label="Choose language">
                             <option value="English">English</option>
                             <option value="Ukrainian">Ukrainian</option>
                         </select>
-                        <button class="signin-btn ms-4 btn btn-link p-0 text-secondary text-nowrap text-decoration-none">
+                        <button class="signin-btn ms-3 btn btn-link p-0 text-secondary text-nowrap text-decoration-none">
                             Sign In
                         </button>
                     </div>
@@ -72,50 +73,100 @@
         </div>
     </header>
     <main class="main">
-        <div class="container-xl">
-            <div class="row justify-content-between mt-4 pt-3">
-                <div class="col-lg-3 d-flex ps-0 pt-3">
+        <div class="container-xl position-relative">
+            <div class="row justify-content-end mt-4 mx-0 pt-3">
+                <div class="col-3 pt-3 ps-0 pe-2 position-absolute start-0">
                     <aside class="aside d-flex flex-column align-items-center w-100">
-                        <button type="button" 
+                        <button type="button"
                             class="d-flex btn btn-outline-secondary w-100 border-0 fw-bolder py-2 active">
                             <span class="icon shot-icon me-2"></span>
                             All photos
                         </button>
-                        <button type="button" 
+                        <button type="button"
                             class="d-flex btn btn-outline-secondary w-100 border-0 fw-bolder py-2">
                             <span class="icon smile-icon me-2"></span>
                             Selfies
                         </button>
-                        <button type="button" 
+                        <button type="button"
                             class="d-flex btn btn-outline-secondary w-100 border-0 fw-bolder py-2">
                             <span class="icon clock-icon me-2"></span>
                             Recent
                         </button>
-                        <button type="button" 
+                        <button type="button"
                             class="d-flex btn btn-outline-secondary w-100 border-0 fw-bolder py-2">
                             <span class="icon garbadge-icon me-2"></span>
                             Deleted
                         </button>
                     </aside>
                 </div>
-                <div class="col-lg-8 d-flex p-0">
-                    <section class="content w-100">
-                        <header class="content-header w-100 d-flex justify-content-between">
+                <div class="col-8 d-flex ps-2 pe-0">
+                    <section class="content d-flex flex-column">
+                        <header class="content-header d-flex justify-content-between mb-3">
                             <div class="flex-item">
                                 <h1 class="title h1 fw-bolder lh-base mb-1">All photos</h1>
                                 <span class="count fw-bolder"><small class="lh-base">150 items</small></span>
                             </div>
                             <div class="flex-item mt-3">
                                 <div class="btn-group" role="group" aria-label="Toggle button group">
-                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked>
                                     <label class="btn btn-outline-dark" for="btnradio1">Newest</label>
-                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off">
                                     <label class="btn btn-outline-dark" for="btnradio2">Latest</label>
                                 </div>
                             </div>
                         </header>
-                        <div class="cards">
-                            
+                        <div class="cards container-fluid p-0 mt-3">
+                            <div class="row row-cols-2 g-4">
+                                <div class="card-container col-6">
+                                    <div class="card">
+                                        <img src="assets/images/thumbnail.png" 
+                                            class="card-img-top" alt="some image">
+                                        <div class="card-body">
+                                            <h2 class="card-title fw-bolder h4 lh-base mb-1 text-dark">Card title</h2>
+                                            <p class="card-text text-secondary">Here goes some sample, example text that is relatively short.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-container col-6">
+                                    <div class="card ">
+                                        <img src="assets/images/thumbnail.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-container col-6">
+                                    <div class="card ">
+                                        <img src="assets/images/thumbnail.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-container col-6">
+                                    <div class="card ">
+                                        <img src="assets/images/thumbnail.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -125,4 +176,5 @@
     <footer></footer>
     <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

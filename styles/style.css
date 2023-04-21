@@ -3,7 +3,7 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: local("Commissioner"), local(Commissioner-Regular), url(assets/fonts/Commissioner-Regular) format("ttf");
+    src: local("Commissioner"), local(Commissioner-Regular), url(/assets/fonts/Commissioner-Regular.woff2) format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-    src: local("Commissioner Medium"), local(Commissioner-Medium), url(assets/fonts/Commissioner-Medium) format("ttf");
+    src: local("Commissioner Medium"), local(Commissioner-Medium), url(/assets/fonts/Commissioner-Medium.woff2) format("woff2");
 }
 
 @font-face {
@@ -19,11 +19,12 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: local("Commissioner Bold"), local(Commissioner-Bold), url(assets/fonts/Commissioner-Bold) format("ttf");
+    src: local("Commissioner Bold"), local(Commissioner-Bold), url(/assets/fonts/Commissioner-Bold.woff2) format("woff2");
 }
 
+html,
 body {
-    font-family: 'Commissioner', sans-serif;
+    font-family: Commissioner, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -131,4 +132,14 @@ body {
 
 .main .container-xl .row .content .content-header .btn {
     width: 88px;
+}
+
+.main .container-xl .row .content .cards .row .card-container .card {
+    border-radius: 8px;
+    min-height: 428px;
+    border: 1px solid #EBEBEB;
+}
+
+.main .container-xl .row .content .cards .row .card-container .card .card-img-top {
+    height: 200px;
 }
