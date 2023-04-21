@@ -141,6 +141,24 @@ body {
     border: 1px solid #EBEBEB;
 }
 
+.main .container-xl .row .content .cards .row .card-container .card .card-body .card-content .card-text {
+    height: 48px;
+    overflow: hidden;
+}
+
+.main .container-xl .row .content .cards .row .card-container .card .card-body .card-content .card-text.show {
+    overflow: auto;
+    height: auto;
+}
+
+.main .container-xl .row .content .cards .row .card-container .card .card-body .card-content .btn {
+    display: none; 
+}
+
+.main .container-xl .row .content .cards .row .card-container .card .card-body .card-content .btn.show {
+    display: inline-block;
+}
+
 .main .container-xl .row .content .cards .row .card-container .card .card-img-top {
     height: 200px;
 }
