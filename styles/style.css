@@ -121,8 +121,9 @@ body {
     border-radius: 8px;
 }
 .main .container-xl .row .aside .btn-outline-secondary.active,
-.main .container-xl .row .aside .btn-outline-secondary:hover {
-    background: #ED7135;
+.main .container-xl .row .aside .btn-outline-secondary:hover,
+.main .container-xl .row .content .cards .row .card-container .card .card-body .card-buttons .btn-secondary {
+    background-color: #ED7135;
 }
 
 .main .container-xl .row .aside .btn-outline-secondary:hover .icon,
@@ -142,4 +143,8 @@ body {
 
 .main .container-xl .row .content .cards .row .card-container .card .card-img-top {
     height: 200px;
+}
+
+.main .container-xl .row .content .cards .row .card-container .card .card-body .card-buttons .btn {
+    border-radius: 8px;
 }
